@@ -73,3 +73,25 @@ let person1 = new Person('Alex', 'alex@test.com');
 person1.displayName();
 
 
+
+class Person {
+  name;
+
+  set pname(n) {
+    this.name = n;
+  }
+
+  get pname() {
+    return this.name;
+  }
+
+  getName() {
+    return this.name;
+  }
+}
+
+let person1 = new Person();
+person1.pname = "alex";
+console.log(person1.pname);
+console.log(person1.getName());
+
