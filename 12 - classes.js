@@ -30,3 +30,25 @@ person2.dob = 2002;
 console.log(person2);
 console.log(person2.age()); //20
 
+
+
+//constructors
+//Classes
+
+//object
+const person = { name: 'Alex', email: 'alex@test.com' };
+
+class Person {
+  //constructor method
+  constructor() {
+    console.log('construtor invoked');
+  }
+
+  hello(){
+    console.log("hello");
+  }
+}
+
+let person1 = new Person();
+person1.hello();
+
