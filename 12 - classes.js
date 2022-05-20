@@ -52,3 +52,24 @@ class Person {
 let person1 = new Person();
 person1.hello();
 
+
+
+class Person {
+  name;
+  email;
+  address;
+
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
+  }
+
+  displayName() {
+    console.log(this.name);
+  }
+}
+
+let person1 = new Person('Alex', 'alex@test.com');
+person1.displayName();
+
+
