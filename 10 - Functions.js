@@ -65,3 +65,18 @@ hello6 = (p1) => {
 
 consoel.log(hello6());
 
+hello6 = () => {
+  return 'A';
+};
+
+console.log(hello6()); //A
+
+hello7 = () => {
+  'B';
+};
+
+console.log(hello7()); //undefined
+
+hello8 = () => 'C';
+console.log(hello8()); //C
+
