@@ -49,3 +49,16 @@ const doSomething = (callback) => {
 doSomething((result) => {
   console.log(result);
 });
+
+
+function getBusDetails(busCode){
+    
+    let resObj= {k1: "v1", k2: "v2", k3 : "v3"};
+    //https://apsrtcmobile.amnex.com/Transistservice.asmx/GetBusTrackerDetails_pilot_webportal?ServiceNo=3359&UserId=0&Flag=0&vehicleregno=&depotid=127
+    
+    return resObj;
+}
+
+
+let res = getBusDetails(3359);
+console.log(res["k1"]); //v1
