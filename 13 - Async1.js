@@ -9,3 +9,22 @@ function getBusDetails(busCode){
 let res = getBusDetails(1001);
 console.log(res["k1"]); //v1
 
+
+
+function f1(){
+    console.log("f1");
+}
+
+function f2(callback){
+    callback();
+}
+
+f2(f1); //f1
+
+let f3 = (callback) => {
+    callback();
+}
+
+f3(()=>{
+   console.log("f3");  //f3
+})
