@@ -28,3 +28,24 @@ let f3 = (callback) => {
 f3(()=>{
    console.log("f3");  //f3
 })
+
+let f1 = (callback) => {
+    callback();
+}
+
+f3(()=>{
+   console.log("f3");  //f3
+})
+
+
+
+
+let res = 0;
+const doSomething = (callback) => {
+  res  = 10;
+  callback(res);
+};
+
+doSomething((result) => {
+  console.log(result);
+});
