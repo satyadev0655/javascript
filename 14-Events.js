@@ -12,3 +12,44 @@
     </script>
   </body>
 </html>
+
+
+
+<html>
+  <head> </head>
+  <body >
+    <input type="text" 
+    onchange="onchngDemo()"
+    onkeydown="keyDwn()">
+   
+   <button
+      onclick="onclkDemo()"
+      onmouseover="onMsOver()"
+      onmouseout="onMsOut()"
+    >
+      Click
+    </button>
+
+    <script>
+      function onclkDemo() {
+        console.log('onclick event');
+      }
+
+      function onchngDemo() {
+        console.log('onchange event');
+      }
+
+      function onMsOver() {
+        console.log('onmouseover event');
+      }
+
+      function onMsOut() {
+        console.log('onmouseout event');
+      }
+
+      function keyDwn(){
+        console.log('onkeydown event');
+      }
+    </script>
+  </body>
+</html>
